@@ -1,10 +1,14 @@
 import React from 'react'
-
+import UserContextProvider from './context/UserContextProvider.jsx'
+import './App.css'
+import Login from './components/Login'
+import Profile from './components/Profile'
 function App() {
   return (
-    <>
-      <h1>Mini Context Project</h1>
-    </>
+    <UserContextProvider>
+      <Login />
+      <Profile />
+    </UserContextProvider>
   )
 }
 
