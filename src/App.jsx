@@ -1,16 +1,12 @@
-import "./App.css";
-import Login from "./components/Login";
-import Profile from "./components/Profile";
-import UserContextProvider from "./context/UserContextProvider";
+import React from 'react'
 
 function App() {
   return (
-    <UserContextProvider>
+    <>
       <h1>Mini Context Project</h1>
-      <Login />
-      <Profile />
-    </UserContextProvider>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
+
